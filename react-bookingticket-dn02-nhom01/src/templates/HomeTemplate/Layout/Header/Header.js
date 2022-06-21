@@ -1,12 +1,13 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Header(props) {
   return (
     <header className="p-4 bg-coolGray-100 text-coolGray-100 bg-black bg-opacity-20 text-white fixed w-full z-10">
       <div className="container flex justify-between h-16 mx-auto">
-        <a
+        <NavLink
           rel="noopener noreferrer"
-          href="#"
+          to="/home"
           aria-label="Back to homepage"
           className="flex items-center p-2"
         >
@@ -14,43 +15,34 @@ export default function Header(props) {
             src="https://cyberlearn.vn/wp-content/uploads/2020/03/cyberlearn-min-new-opt2.png"
             alt="cyberlearn.vn"
           />
-        </a>
+        </NavLink>
         <ul className="items-stretch hidden space-x-3 lg:flex">
           <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-violet-400 dark:border-violet-400 text-white"
+            <NavLink
+              to="/home"
+              activeClassName="border-b-2 border-violet-600"
+              className="flex items-center px-4 -mb-1 text-violet-600"
             >
-              Link
-            </a>
+              Home
+            </NavLink>
           </li>
           <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent text-white"
+            <NavLink
+              to="/contact"
+              className="flex items-center px-4 -mb-1 text-white"
+              activeClassName="border-b-2 border-violet-600"
             >
-              Link
-            </a>
+              Contact
+            </NavLink>
           </li>
           <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent text-white"
+            <NavLink
+              to="/news"
+              className="flex items-center px-4 -mb-1 text-white"
+              activeClassName="border-b-2 border-violet-600"
             >
-              Link
-            </a>
-          </li>
-          <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent text-white"
-            >
-              Link
-            </a>
+              News
+            </NavLink>
           </li>
         </ul>
         <div className="items-center flex-shrink-0 hidden lg:flex">

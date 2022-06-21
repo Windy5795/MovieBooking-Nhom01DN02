@@ -1,0 +1,14 @@
+.slick-dots-bottom{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.slick-dots li button:before{
+    opacity: 0 !important;
+}
+
+.ant-carousel .slick-dots li button{
+    height: 7px !important;
+    border: 1px solid black !important;
+    border-radius: 7px !important;
+}

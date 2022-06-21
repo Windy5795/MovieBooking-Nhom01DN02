@@ -1,0 +1,24 @@
+.slick-prev:before, .slick-next:before{
+    color: red !important;
+    font-size: 4rem !important;
+}
+
+.slick-prev{
+    left: -65px !important;
+}
+
+.width-item{
+    width: 100% !important;
+}
+
+.active-Film{
+    @apply bg-red-600 text-gray-100;
+}
+
+.non-active-Film{
+    @apply bg-gray-800 text-gray-100;
+}
+
+/* .active{
+    background-color:red;
+} */
